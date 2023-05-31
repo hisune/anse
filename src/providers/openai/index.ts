@@ -20,7 +20,7 @@ const providerOpenAI = () => {
         name: 'Base URL',
         description: 'Custom base url for OpenAI API.',
         type: 'input',
-        default: 'https://api.openai.com',
+        default: 'https://opai.sockio.com',
       },
       {
         key: 'model',
@@ -35,7 +35,7 @@ const providerOpenAI = () => {
           { value: 'gpt-4-32k-0314', label: 'gpt-4-32k-0314' },
           { value: 'gpt-3.5-turbo-0301', label: 'gpt-3.5-turbo-0301' },
         ],
-        default: 'gpt-3.5-turbo',
+        default: 'gpt-4',
       },
       {
         key: 'maxTokens',
@@ -55,7 +55,7 @@ const providerOpenAI = () => {
         min: 0,
         max: 2,
         default: 0.7,
-        step: 0.01,
+        step: 0.1,
       },
       {
         key: 'top_p',
